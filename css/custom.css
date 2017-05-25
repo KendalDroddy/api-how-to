@@ -1,0 +1,29 @@
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/*Teton Component*/
+.teton-container {
+  background: linear-gradient(0deg, black, transparent 40%),
+              black url('../img/teton.jpg') no-repeat;
+  background-size: cover;
+  background-position: 30% 70%;
+}
+
+.teton {
+  opacity: 0.0;
+}
+
+.content-list {
+  display: table;
+  margin: 0 auto;
+}
+
+.head {
+  background: black;
+}
+
+.intro {
+  border-left: solid 1px white;
+}
