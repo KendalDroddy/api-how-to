@@ -27,3 +27,7 @@ body {
 .intro {
   border-left: solid 1px white;
 }
+
+.key {
+  background: black;
+}

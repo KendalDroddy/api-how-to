@@ -35,7 +35,7 @@
         </div>
         <div class="col-md-8 text-center intro">
           <span class="h1">National Park Services Data API</span>
-          <p>The National Park Service function as an agency of the US government. 
+          <p class="pr-2">The National Park Service function as an agency of the US government. 
           This agency is most commonly associated with its role in managing the nation's
           59 national parks. These parks, each magnificent in its own way, draw thousands
           to millions of visitors each year. With so much interest, a convenient way to store
@@ -46,10 +46,24 @@
 
       <!-- What's In An API? -->
       <div class="row">
-        <div class="col-md-8 offset-2 text-center py-3">
-          <span class="h2">API Introduction</span>
+        <div class="col-md-6 offset-3 text-center py-3">
+          <span class="h1">API Introduction</span>
           <p class="pt-2">The internet has made finding information, about any and everything, incredibly easy. In fact, people have more information at their fingertips now than at any point in history. Generally, this information is found by utilizing a search engine or browsings a website. But websites also provide information in ways that not nearly as many people know about.</p>
-          <p>Utilizing what is known as an Application Programming Interface, or API for short, users can access troves of data that's othewise hidden to the naked eye. This is done by calling specific methods established by the website which allows this data to be retreived from their web servers. In this manner, we will utilize the National Park Services Data API to fetch data from their servers!</p>
+          <p>Utilizing what is known as an Application Programming Interface, or API for short, users can access troves of data that's othewise hidden to the naked eye. This is done by calling specific methods established by the website which allows this data to be retreived from their web servers. In this manner, we will utilize the <a href="https://developer.nps.gov/api/index.htm">National Park Services Data API</a> to fetch data from their servers!</p>
+        </div>
+      </div>
+
+      <!-- API Key -->
+      <div class="row key">
+        <div class="col-md-6 offset-3 text-center text-white pt-3">
+          <span class="h1">API Key</span>
+          <p class="pt-2">If you visit the official National Park Services Data API page the first thing you will notice is a form to be filled out. This will provide you with an API key which will be used when making requests to their server. But why exactly is this necessary?</p>
+          <img src="img/form.png" class="img-fluid form" alt="NPS Data API Form">
+          <p class="pt-3">First, the server needs to regulate the number and frequency of requests being made to it. Too many requests, or request coming too frequently may result in adverse performance of the server. It is recommended that no more than 5 requests are made per second, or more than 1,000 requests are made per day.</p>
+          <p>Additionally, this key is linked to your idenity based on whatever you included in the form. If the API is used for malicious purposes, then it will be clear which key it is coming from.</p>
+          <p>With these things in mind, go ahead and fill out the form when you are ready! Once completed, click submit and you should see the following confirmation message:</p>
+          <img src="img/keyConfirm.png" class="img-fluid form mb-3" alt="NPS Data API Form Confirmation Message">
+          <p>Now check your email to make sure you received your key!</p>
         </div>
       </div>
 
@@ -63,5 +77,6 @@
 
 
     </div>
+    <script src="js/javascript.js"></script>
   </body>
 </html>
