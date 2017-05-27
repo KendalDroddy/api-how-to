@@ -28,8 +28,8 @@
           <ol type="I" class="content-list text-left">
             <li>API Intro</li>
             <li>API Key</li>
-            <li>Stuff</li>
-            <li>More Stuff</li>
+            <li>GET vs POST</li>
+            <li>Request Syntax</li>
             <li>Last Stuff</li>
           </ol>
         </div>
@@ -64,6 +64,28 @@
           <p>With these things in mind, go ahead and fill out the form when you are ready! Once completed, click submit and you should see the following confirmation message:</p>
           <img src="img/keyConfirm.png" class="img-fluid form mb-3" alt="NPS Data API Form Confirmation Message">
           <p>Now check your email to make sure you received your key!</p>
+        </div>
+      </div>
+
+      <!-- GET vs POST -->
+      <div class="row">
+        <div class="col-md-6 offset-3 text-center pt-3">
+          <span class="h1">GET vs POST Request</span>
+          <p class="pt-2">Now that we are equipped with our key, we are nearly ready to request data from the server. However, there are a couple of ways this can be done and the differences should be noted!</p>
+          <p>First and foremost, when working with an API two forms of requests may be specified: GET and POST. A GET request sends all the information to the server via the URL. In fact, I can practically guaranteed you've seen what a GET request looks like without even realizing it. For example, go to <a href="google.com">Google</a>, enter the word 'dog', then search. Now look at the URL and you'll see the first portion looks like this: https://www.google.com/search?q=google+dog. The 'q' stands for query string and is set equal to 'google+dog'. It should be pretty obvious to Google's servers that you are requesting information about a 'dog'!</p>
+          <p>Next, we have the POST request. As may be deduced from the name, this request differs in that it sends, or 'posts' data to the specificed location to be procesesed. It also does this via the request body which means no critical information is contained within the URL like the GET request. You can see how this may be preferred if secure data is being transmitted between the user and server.</p>
+          <p>Either of these methods may be specified in code via <code>method="GET"</code> or <code>method="POST"</code>. However, for our purposes, we will be relying solely on the GET method. This will allow us to retreive the information we are after from the National Park Service. As noted on their API website, it is also the only request method currently supported as they are still in Beta development.</p>
+        </div>
+      </div>
+
+      <!-- Request Syntax -->
+      <div class="row key">
+        <div class="col-md-6 offset-3 text-center text-white pt-3">
+          <span class="h1">GET vs POST Request</span>
+          <p class="pt-2">Now that we are equipped with our key, we are nearly ready to request data from the server. However, there are a couple of ways this can be done and the differences should be noted!</p>
+          <p>First and foremost, when working with an API two forms of requests may be specified: GET and POST. A GET request sends all the information to the server via the URL. In fact, I can practically guaranteed you've seen what a GET request looks like without even realizing it. For example, go to <a href="google.com">Google</a>, enter the word 'dog', then search. Now look at the URL and you'll see the first portion looks like this: https://www.google.com/search?q=google+dog. The 'q' stands for query string and is set equal to 'google+dog'. It should be pretty obvious to Google's servers that you are requesting information about a 'dog'!</p>
+          <p>Next, we have the POST request. As may be deduced from the name, this request differs in that it sends, or 'posts' data to the specificed location to be procesesed. It also does this via the request body which means no critical information is contained within the URL like the GET request. You can see how this may be preferred if secure data is being transmitted between the user and server.</p>
+          <p>Either of these methods may be specified in code via <code>method="GET"</code> or <code>method="POST"</code>. However, for our purposes, we will be relying solely on the GET method. This will allow us to retreive the information we are after from the National Park Service. As noted on their API website, it is also the only request method currently supported as they are still in Beta development.</p>
         </div>
       </div>
 
